@@ -16,11 +16,11 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
     { name: 'Contact', id: 'contact' },
   ];
 
-  const scrollToSection = (e: React.MouseEvent, id: string) => {
+  const scrollToSection = (e: React.MouseEvent | React.TouchEvent, id: string) => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // Compensate for sticky header height
+      const offset = 80; // Account for sticky header
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -55,7 +55,10 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
               {link.name}
             </button>
           ))}
-          <button className="bg-indigo-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-indigo-700 transition-all shadow-md active:scale-95">
+          <button 
+            onClick={(e) => scrollToSection(e, 'home')}
+            className="bg-indigo-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-indigo-700 transition-all shadow-md active:scale-95"
+          >
             Download
           </button>
         </div>
@@ -81,7 +84,10 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
               {link.name}
             </button>
           ))}
-          <button className="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold">
+          <button 
+            onClick={(e) => scrollToSection(e, 'home')}
+            className="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold"
+          >
             Download Now
           </button>
         </div>
