@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Feature } from '../types';
+import { Feature } from '../types.ts';
 
 const FEATURES: Feature[] = [
   {

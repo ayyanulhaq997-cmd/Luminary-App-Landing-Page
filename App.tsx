@@ -1,15 +1,15 @@
 
 import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import About from './components/About';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
-import PressKit from './components/PressKit';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import AIChatBot from './components/AIChatBot';
+import Header from './components/Header.tsx';
+import Hero from './components/Hero.tsx';
+import Features from './components/Features.tsx';
+import About from './components/About.tsx';
+import Testimonials from './components/Testimonials.tsx';
+import FAQ from './components/FAQ.tsx';
+import PressKit from './components/PressKit.tsx';
+import Contact from './components/Contact.tsx';
+import Footer from './components/Footer.tsx';
+import AIChatBot from './components/AIChatBot.tsx';
 
 const App: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,7 +57,6 @@ const App: React.FC = () => {
       </main>
 
       <Footer />
-      {/* AIChatBot added to provide user assistance across the site */}
       <AIChatBot />
     </div>
   );

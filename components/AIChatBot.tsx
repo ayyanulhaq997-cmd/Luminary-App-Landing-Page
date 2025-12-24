@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Message } from '../types';
-import { getAssistantResponse } from '../services/geminiService';
+import { Message } from '../types.ts';
+import { getAssistantResponse } from '../services/geminiService.ts';
 
 const AIChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,6 @@ const AIChatBot: React.FC = () => {
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
-  // Default to checking process.env.API_KEY directly
   const [hasKey, setHasKey] = useState(!!process.env.API_KEY);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -23,7 +22,6 @@ const AIChatBot: React.FC = () => {
       const aistudio = (window as any).aistudio;
       if (aistudio) {
         const selected = await aistudio.hasSelectedApiKey();
-        // Update state if either env var or explicit selection is present
         setHasKey(!!process.env.API_KEY || selected);
       }
     };
@@ -34,7 +32,6 @@ const AIChatBot: React.FC = () => {
     const aistudio = (window as any).aistudio;
     if (aistudio) {
       await aistudio.openSelectKey();
-      // MUST assume key selection was successful after triggering to avoid race conditions
       setHasKey(true);
       setMessages(prev => [...prev, { role: 'assistant', content: "API connection active! How can I help you today?" }]);
     }
