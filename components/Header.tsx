@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
           <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white shadow-lg">
             <i className="fas fa-sparkles text-xl"></i>
           </div>
-          <span className="text-2xl font-extrabold tracking-tight text-slate-900">Luminary</span>
+          <span className="text-2xl font-extrabold tracking-tight text-slate-900">FENIX</span>
         </div>
 
         {/* Desktop Nav */}

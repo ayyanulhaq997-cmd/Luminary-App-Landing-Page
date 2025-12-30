@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
               <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white">
                 <i className="fas fa-sparkles text-sm"></i>
               </div>
-              <span className="text-xl font-bold text-white tracking-tight">Luminary</span>
+              <span className="text-xl font-bold text-white tracking-tight">FENIX</span>
             </div>
             <p className="mb-6 leading-relaxed">
               Illuminating your productivity journey since 2024. The only tool designed for deep thinkers and high achievers.
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>© 2024 Luminary Inc. All rights reserved.</p>
+          <p>© 2024 FENIX Inc. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Terms of Service</a>

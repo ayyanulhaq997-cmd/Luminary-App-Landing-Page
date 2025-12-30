@@ -8,9 +8,9 @@ const About: React.FC = () => {
         <div className="lg:w-1/2">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://picsum.photos/seed/about-luminary/800/600" 
+              src="https://picsum.photos/seed/about-fenix/800/600" 
               className="w-full h-auto" 
-              alt="About Luminary"
+              alt="About FENIX"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-indigo-900/20 to-transparent"></div>
           </div>
@@ -22,7 +22,7 @@ const About: React.FC = () => {
             Stop reacting to life. <br/><span className="text-indigo-600">Start leading it.</span>
           </h3>
           <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-            Luminary started in a small cafe in San Francisco. We were tired of productivity apps that just felt like "digital chores." We wanted something that felt like a partner.
+            FENIX started in a small cafe in San Francisco. We were tired of productivity apps that just felt like "digital chores." We wanted something that felt like a partner.
           </p>
           <div className="space-y-6">
             <div className="flex gap-4">

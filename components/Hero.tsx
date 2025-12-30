@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             Illuminate Your <span className="text-indigo-600">Productivity</span> Journey.
           </h1>
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-            Luminary is the only productivity tool that actually learns your rhythms to help you work smarter, not longer. Available now on your favorite devices.
+            FENIX is the only productivity tool that actually learns your rhythms to help you work smarter, not longer. Available now on your favorite devices.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <a 

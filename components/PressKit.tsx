@@ -14,7 +14,7 @@ const PressKit: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-                Everything you need to feature Luminary in your story. Access our official brand guidelines, high-resolution logos, and product screenshots.
+                Everything you need to feature FENIX in your story. Access our official brand guidelines, high-resolution logos, and product screenshots.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="flex items-center gap-3 bg-white text-slate-900 px-6 py-3 rounded-xl font-bold hover:bg-slate-200 transition-all shadow-lg">
@@ -46,7 +46,7 @@ const PressKit: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-4 text-indigo-400 font-medium">
                   <i className="fas fa-envelope"></i>
-                  <a href="mailto:press@luminaryapp.com" className="hover:underline">press@luminaryapp.com</a>
+                  <a href="mailto:press@fenixapp.com" className="hover:underline">press@fenixapp.com</a>
                 </div>
               </div>
             </div>

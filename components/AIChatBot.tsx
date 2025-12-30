@@ -6,7 +6,7 @@ import { getAssistantResponse } from '../services/geminiService.ts';
 const AIChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: "Hi! I'm the Luminary Assistant. Any questions about the app features or pricing?" }
+    { role: 'assistant', content: "Hi! I'm the FENIX Assistant. Any questions about the app features or pricing?" }
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -60,7 +60,7 @@ const AIChatBot: React.FC = () => {
         <i className={`fas ${isOpen ? 'fa-times' : 'fa-comment-dots'} text-2xl`}></i>
         {!isOpen && (
            <span className="absolute right-full mr-4 px-3 py-1 bg-slate-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden sm:block">
-            Ask about Luminary
+            Ask about FENIX
           </span>
         )}
       </button>
@@ -72,7 +72,7 @@ const AIChatBot: React.FC = () => {
               <i className="fas fa-sparkles"></i>
             </div>
             <div>
-              <p className="font-bold text-sm">Luminary AI Assistant</p>
+              <p className="font-bold text-sm">FENIX AI Assistant</p>
               <p className="text-[10px] opacity-80 uppercase tracking-widest">Powered by Gemini</p>
             </div>
           </div>
