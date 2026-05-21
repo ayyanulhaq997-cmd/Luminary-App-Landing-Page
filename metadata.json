@@ -1,5 +1,8 @@
 {
   "name": "Luminary App Landing Page",
   "description": "A premium, high-converting landing page for a mobile application, featuring modern UI components, feature highlights, FAQs, and an AI-powered assistant for prospective users.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

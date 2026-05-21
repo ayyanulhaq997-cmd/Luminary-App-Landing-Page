@@ -11,6 +11,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
   const navLinks = [
     { name: 'Home', id: 'home' },
     { name: 'Features', id: 'features' },
+    { name: 'Productivity Hub', id: 'hub' },
     { name: 'About', id: 'about' },
     { name: 'FAQ', id: 'faq' },
     { name: 'Contact', id: 'contact' },
